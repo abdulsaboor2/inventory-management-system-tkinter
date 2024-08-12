@@ -239,9 +239,19 @@ class InventorySystem:
         price = self.entry_price.get()
         category = self.entry_category.get()
 
+        # Validate inputs
         if not self.validate_product_inputs(name, quantity, price, category):
             return
 
+        # Check if product with the same name already exists
+        self.cursor.execute("SELECT * FROM products WHERE name = ?", (name,))
+        existing_product = self.cursor.fetchone()
+
+        if existing_product:
+            messagebox.showwarning("Warning", "A product with this name already exists.")
+            return
+
+        # Insert new product if it doesn't exist
         self.cursor.execute("INSERT INTO products (name, quantity, price, category) VALUES (?, ?, ?, ?)",
                             (name, quantity, price, category))
         self.conn.commit()
