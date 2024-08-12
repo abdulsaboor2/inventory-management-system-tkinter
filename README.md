@@ -1,6 +1,6 @@
 # Inventory Management System
 
-This project is a comprehensive Inventory Management System built using Python and Tkinter. The application is designed to manage products, transactions, and sales efficiently. One of the key aspects of this system is its robust input validation, ensuring data integrity and preventing common user errors.
+This project is a comprehensive Inventory Management System built using Python and Tkinter. The application is designed to manage products, transactions, and sales efficiently. One of the key aspects of this system is its robust input validation, which ensures data integrity and prevents common user errors.
 
 ## Features
 + **User Authentication**: Admin and User roles with different permissions.
@@ -100,6 +100,9 @@ After
 
 ![image](https://github.com/user-attachments/assets/4f4dbd70-f8dd-4cdb-a7a7-d6cd7a3da446)
 
+## Video
+
+https://github.com/user-attachments/assets/1a02f4d8-4097-43a7-9f24-13c61224b32b
 
 ## Contributing
 
